@@ -4,7 +4,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_drift, get_offset, verify_series
 
 
-def natr(high, low, close, length=None, scalar=None, mamode=None, talib=None, drift=None, offset=None, **kwargs):
+def natr(high, low, close, length=None, scalar=None, mamode=None, talib=False, drift=None, offset=None, **kwargs):
     """Indicator: Normalized Average True Range (NATR)"""
     # Validate arguments
     length = int(length) if length and length > 0 else 14

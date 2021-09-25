@@ -4,7 +4,7 @@ from pandas_ta.overlap import ma
 from pandas_ta.utils import get_offset, tal_ma, verify_series
 
 
-def apo(close, fast=None, slow=None, mamode=None, talib=None, offset=None, **kwargs):
+def apo(close, fast=None, slow=None, mamode=None, talib=False, offset=None, **kwargs):
     """Indicator: Absolute Price Oscillator (APO)"""
     # Validate Arguments
     fast = int(fast) if fast and fast > 0 else 12

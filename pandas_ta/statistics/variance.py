@@ -3,7 +3,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def variance(close, length=None, ddof=None, talib=None, offset=None, **kwargs):
+def variance(close, length=None, ddof=None, talib=False, offset=None, **kwargs):
     """Indicator: Variance"""
     # Validate Arguments
     length = int(length) if length and length > 1 else 30

@@ -4,7 +4,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def roc(close, length=None, scalar=None, talib=None, offset=None, **kwargs):
+def roc(close, length=None, scalar=None, talib=False, offset=None, **kwargs):
     """Indicator: Rate of Change (ROC)"""
     # Validate Arguments
     length = int(length) if length and length > 0 else 10

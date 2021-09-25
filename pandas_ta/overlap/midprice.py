@@ -3,7 +3,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def midprice(high, low, length=None, talib=None, offset=None, **kwargs):
+def midprice(high, low, length=None, talib=False, offset=None, **kwargs):
     """Indicator: Midprice"""
     # Validate arguments
     length = int(length) if length and length > 0 else 2

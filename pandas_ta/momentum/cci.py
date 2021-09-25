@@ -5,7 +5,7 @@ from pandas_ta.statistics.mad import mad
 from pandas_ta.utils import get_offset, verify_series
 
 
-def cci(high, low, close, length=None, c=None, talib=None, offset=None, **kwargs):
+def cci(high, low, close, length=None, c=None, talib=False, offset=None, **kwargs):
     """Indicator: Commodity Channel Index (CCI)"""
     # Validate Arguments
     length = int(length) if length and length > 0 else 14

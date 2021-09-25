@@ -4,7 +4,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_drift, get_offset, verify_series
 
 
-def uo(high, low, close, fast=None, medium=None, slow=None, fast_w=None, medium_w=None, slow_w=None, talib=None, drift=None, offset=None, **kwargs):
+def uo(high, low, close, fast=None, medium=None, slow=None, fast_w=None, medium_w=None, slow_w=None, talib=False, drift=None, offset=None, **kwargs):
     """Indicator: Ultimate Oscillator (UO)"""
     # Validate arguments
     fast = int(fast) if fast and fast > 0 else 7

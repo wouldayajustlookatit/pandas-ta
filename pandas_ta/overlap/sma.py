@@ -3,7 +3,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def sma(close, length=None, talib=None, offset=None, **kwargs):
+def sma(close, length=None, talib=False, offset=None, **kwargs):
     """Indicator: Simple Moving Average (SMA)"""
     # Validate Arguments
     length = int(length) if length and length > 0 else 10

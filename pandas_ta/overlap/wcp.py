@@ -3,7 +3,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def wcp(high, low, close, talib=None, offset=None, **kwargs):
+def wcp(high, low, close, talib=False, offset=None, **kwargs):
     """Indicator: Weighted Closing Price (WCP)"""
     # Validate Arguments
     high = verify_series(high)

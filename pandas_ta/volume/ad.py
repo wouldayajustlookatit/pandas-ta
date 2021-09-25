@@ -3,7 +3,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, non_zero_range, verify_series
 
 
-def ad(high, low, close, volume, open_=None, talib=None, offset=None, **kwargs):
+def ad(high, low, close, volume, open_=None, talib=False, offset=None, **kwargs):
     """Indicator: Accumulation/Distribution (AD)"""
     # Validate Arguments
     high = verify_series(high)

@@ -6,7 +6,7 @@ from pandas_ta.statistics import stdev
 from pandas_ta.utils import get_offset, non_zero_range, tal_ma, verify_series
 
 
-def bbands(close, length=None, std=None, ddof=0, mamode=None, talib=None, offset=None, **kwargs):
+def bbands(close, length=None, std=None, ddof=0, mamode=None, talib=False, offset=None, **kwargs):
     """Indicator: Bollinger Bands (BBANDS)"""
     # Validate arguments
     length = int(length) if length and length > 0 else 5

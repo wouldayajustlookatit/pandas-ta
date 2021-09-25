@@ -5,7 +5,7 @@ from pandas_ta.overlap import ma
 from pandas_ta.utils import get_offset, verify_series, get_drift, zero
 
 
-def dm(high, low, length=None, mamode=None, talib=None, drift=None, offset=None, **kwargs):
+def dm(high, low, length=None, mamode=None, talib=False, drift=None, offset=None, **kwargs):
     """Indicator: DM"""
     # Validate Arguments
     length = int(length) if length and length > 0 else 14

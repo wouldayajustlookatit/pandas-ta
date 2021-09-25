@@ -3,7 +3,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def willr(high, low, close, length=None, talib=None, offset=None, **kwargs):
+def willr(high, low, close, length=None, talib=False, offset=None, **kwargs):
     """Indicator: William's Percent R (WILLR)"""
     # Validate arguments
     length = int(length) if length and length > 0 else 14

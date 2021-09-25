@@ -5,7 +5,7 @@ from pandas_ta.overlap import ema
 from pandas_ta.utils import get_offset, verify_series, signals
 
 
-def macd(close, fast=None, slow=None, signal=None, talib=None, offset=None, **kwargs):
+def macd(close, fast=None, slow=None, signal=None, talib=False, offset=None, **kwargs):
     """Indicator: Moving Average, Convergence/Divergence (MACD)"""
     # Validate arguments
     fast = int(fast) if fast and fast > 0 else 12

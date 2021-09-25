@@ -3,7 +3,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, signed_series, verify_series
 
 
-def obv(close, volume, talib=None, offset=None, **kwargs):
+def obv(close, volume, talib=False, offset=None, **kwargs):
     """Indicator: On Balance Volume (OBV)"""
     # Validate arguments
     close = verify_series(close)

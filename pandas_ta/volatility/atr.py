@@ -5,7 +5,7 @@ from pandas_ta.overlap import ma
 from pandas_ta.utils import get_drift, get_offset, verify_series
 
 
-def atr(high, low, close, length=None, mamode=None, talib=None, drift=None, offset=None, **kwargs):
+def atr(high, low, close, length=None, mamode=None, talib=False, drift=None, offset=None, **kwargs):
     """Indicator: Average True Range (ATR)"""
     # Validate arguments
     length = int(length) if length and length > 0 else 14

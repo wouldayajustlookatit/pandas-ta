@@ -5,7 +5,7 @@ from pandas_ta.utils import get_offset, verify_series
 from pandas_ta.utils import recent_maximum_index, recent_minimum_index
 
 
-def aroon(high, low, length=None, scalar=None, talib=None, offset=None, **kwargs):
+def aroon(high, low, length=None, scalar=None, talib=False, offset=None, **kwargs):
     """Indicator: Aroon & Aroon Oscillator"""
     # Validate Arguments
     length = length if length and length > 0 else 14

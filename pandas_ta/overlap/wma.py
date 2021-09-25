@@ -4,7 +4,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def wma(close, length=None, asc=None, talib=None, offset=None, **kwargs):
+def wma(close, length=None, asc=None, talib=False, offset=None, **kwargs):
     """Indicator: Weighted Moving Average (WMA)"""
     # Validate Arguments
     length = int(length) if length and length > 0 else 10

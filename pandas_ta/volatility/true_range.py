@@ -5,7 +5,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_drift, get_offset, non_zero_range, verify_series
 
 
-def true_range(high, low, close, talib=None, drift=None, offset=None, **kwargs):
+def true_range(high, low, close, talib=False, drift=None, offset=None, **kwargs):
     """Indicator: True Range"""
     # Validate arguments
     high = verify_series(high)

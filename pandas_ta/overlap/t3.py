@@ -4,7 +4,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def t3(close, length=None, a=None, talib=None, offset=None, **kwargs):
+def t3(close, length=None, a=None, talib=False, offset=None, **kwargs):
     """Indicator: T3"""
     # Validate Arguments
     length = int(length) if length and length > 0 else 10

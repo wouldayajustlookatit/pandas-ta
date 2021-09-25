@@ -5,7 +5,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def stdev(close, length=None, ddof=None, talib=None, offset=None, **kwargs):
+def stdev(close, length=None, ddof=None, talib=False, offset=None, **kwargs):
     """Indicator: Standard Deviation"""
     # Validate Arguments
     length = int(length) if length and length > 0 else 30

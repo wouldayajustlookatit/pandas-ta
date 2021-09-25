@@ -4,7 +4,7 @@ from pandas_ta import Imports
 from pandas_ta.utils import get_offset, verify_series
 
 
-def trima(close, length=None, talib=None, offset=None, **kwargs):
+def trima(close, length=None, talib=False, offset=None, **kwargs):
     """Indicator: Triangular Moving Average (TRIMA)"""
     # Validate Arguments
     length = int(length) if length and length > 0 else 10

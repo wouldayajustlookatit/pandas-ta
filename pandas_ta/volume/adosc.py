@@ -5,7 +5,7 @@ from pandas_ta.overlap import ema
 from pandas_ta.utils import get_offset, verify_series
 
 
-def adosc(high, low, close, volume, open_=None, fast=None, slow=None, talib=None, offset=None, **kwargs):
+def adosc(high, low, close, volume, open_=None, fast=None, slow=None, talib=False, offset=None, **kwargs):
     """Indicator: Accumulation/Distribution Oscillator"""
     # Validate Arguments
     fast = int(fast) if fast and fast > 0 else 3
